@@ -1,0 +1,5 @@
+/.idea/
+# IntelliJ
+# Ignore files with extension `.class` & `.sm`
+*.class
+*.sm
