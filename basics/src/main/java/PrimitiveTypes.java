@@ -66,5 +66,51 @@ public class PrimitiveTypes {
         * */
 
         byte myNewByteValue = (byte) (myMinByteValue / 2);
+
+        System.out.println("Float value range(" + Float.MIN_VALUE + " to " + Float.MAX_VALUE + ")");
+        System.out.println("Double value range(" + Double.MIN_VALUE + " to " + Double.MAX_VALUE + ")");
+
+        /*
+        * The double data type can be specified as a numeric literal with a suffix of either 'd' or 'D', but because doubles are the default in Java, the suffix is optional to use
+        * The float data type can be specified as a numeric literal with a suffix of 'f' or 'F'. This suffix is required if you are assigning a real number to a variable that was declared with a float type
+        * */
+
+        float myFloatValue = 5.25F;
+        double myDoubleValue = 5d;
+
+        // Java's default data type for a decimal literal is a double, which is larger and more precise that a float
+        // float myOtherFloatValue = 5.25; Will raise a error, because 5.25 is considered by java a double value and there is no cast
+
+        /*
+        * Java creators selected double as default because it's more precise, and it can handle a larger range of numbers
+        */
+
+        /*
+        * Char                                          String
+        * .Holds one, and only one, character           .Can hold mu  ltiple characters
+        * .Literal enclosed in Single Quotes            .Literal enclosed in Double Quotes
+        * */
+
+        char myChar = 'D';
+
+        /*
+        * A char occupies two bytes of memory, or 16 bits. The char is stored as a 2 byte number
+        * This number gets mapped to a single character by Java. So, when you print a char, you will see the mapped character, and note the representative number.
+        * */
+
+        /*Unicode
+        * Unicode is an international encoding standard for use with different languages and scripts by which each letter, digit, or symbol is assigned a unique numeric value that applies across
+        * different platforms and programs*/
+
+        char myUnicode  = '\u0044';
+
+        /*Assignment Type       Example code
+        * a literal character   char myChar = 'D';
+        * a Unicode character   char myChar = '\u0044';
+        * an Integer value      char myChar = 68; */
+
+        char mySimpleChar = '?';
+        char myUnicodeChar = '\u003F';
+        char myDecimalChar =  63;
     }
 }
